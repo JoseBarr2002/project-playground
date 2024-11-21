@@ -21,13 +21,12 @@ const AppSidebar = () => {
     <Sidebar collapsible="icon">
       <SidebarContent>
         <SidebarGroup className="p-0">
-          <SidebarGroupLabel
-            className="flex items-center justify-between h-16 px-4 bg-gray-900 text-white rounded-none opacity-100">
-            {open ? <ChefHat  /> : null}
+          <SidebarGroupLabel className="flex items-center justify-between h-16 px-4 bg-gray-900 text-white rounded-none opacity-100">
+            {open ? <ChefHat /> : null}
             {open ? (
               <Label className="text-xl font-semibold">Gourmet POS</Label>
             ) : null}
-            <Button onClick={toggleSidebar}>
+            <Button variant="ghost" onClick={toggleSidebar} size="icon">
               {open ? <X /> : <Menu />}
             </Button>
           </SidebarGroupLabel>

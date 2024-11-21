@@ -1,21 +1,16 @@
 import "../global.css";
 import { Slot } from "expo-router";
 
-import { TooltipProvider } from "@components/ui/tooltip";
-import { SidebarProvider } from "@components/ui/sidebar";
-import AppSidebar from "@components/sidebar";
+import RootLayout from "@components/root/rootLayout";
 
-const MainLayout = () => {
-  return (
-    <TooltipProvider>
-      <SidebarProvider>
-        <AppSidebar />
-        <main>
-          <Slot />
-        </main>
-      </SidebarProvider>
-    </TooltipProvider>
-  );
-};
+import ProviderWrapper from "./provider";
+
+const MainLayout = () => (
+  <ProviderWrapper>
+    <RootLayout>
+      <Slot />
+    </RootLayout>
+  </ProviderWrapper>
+);
 
 export default MainLayout;
