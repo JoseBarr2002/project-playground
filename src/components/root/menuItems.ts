@@ -8,12 +8,12 @@ import {
 export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
   {
     title: "Dashboard",
-    url: "#",
+    url: "/dashboard",
     icon: Home,
   },
   {
     title: "Orders",
-    url: "#",
+    url: "/orders",
     icon: ShoppingBag,
   },
   {
