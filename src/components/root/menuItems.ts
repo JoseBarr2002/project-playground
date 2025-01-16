@@ -1,8 +1,8 @@
 import {
   Home,
-  LucideIcon,
-  ShoppingBag,
+  Box,
   Users,
+  type LucideIcon,
 } from "lucide-react";
 
 export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
@@ -12,13 +12,13 @@ export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
     icon: Home,
   },
   {
-    title: "Orders",
-    url: "/orders",
-    icon: ShoppingBag,
+    title: "Customers",
+    url: "/customers",
+    icon: Users,
   },
   {
-    title: "Customers",
-    url: "#",
-    icon: Users,
+    title: "Units",
+    url: "/units",
+    icon: Box,
   },
 ];

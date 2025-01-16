@@ -17,10 +17,10 @@ import mockRecentOrders from "./mockRecentOrders";
 
 const RecentOrdersCardTable = () => {
   return (
-    <Card className="mb-8">
+    <Card className="mb-8 bg-gray-800 text-white">
       <CardHeader>
         <CardTitle>Recent Orders</CardTitle>
-        <CardDescription>
+        <CardDescription className="text-gray-400">
           You have {mockRecentOrders.length} orders this period.
         </CardDescription>
       </CardHeader>
@@ -28,11 +28,11 @@ const RecentOrdersCardTable = () => {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead>Order ID</TableHead>
-              <TableHead>Customer</TableHead>
-              <TableHead>Items</TableHead>
-              <TableHead>Total</TableHead>
-              <TableHead>Status</TableHead>
+              <TableHead className="text-gray-400">Order ID</TableHead>
+              <TableHead className="text-gray-400">Customer</TableHead>
+              <TableHead className="text-gray-400">Items</TableHead>
+              <TableHead className="text-gray-400">Total</TableHead>
+              <TableHead className="text-gray-400">Status</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>

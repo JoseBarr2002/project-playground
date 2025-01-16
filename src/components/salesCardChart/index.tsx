@@ -12,7 +12,7 @@ const SalesCardChart = () => {
   const chartConfig = {
     sales: {
       label: "Sales",
-      color: "#adfa1d",
+      color: "blue",
     },
   };
 
@@ -26,7 +26,7 @@ const SalesCardChart = () => {
   ];
 
   return (
-    <Card>
+    <Card className="bg-gray-800 text-white">
       <CardHeader>
         <CardTitle>Sales Overview</CardTitle>
         <CardDescription>Daily sales for the past week</CardDescription>
@@ -41,14 +41,14 @@ const SalesCardChart = () => {
               tickLine={false}
               axisLine={false}
             />
-            <YAxis
+            <YAxis 
               stroke="#888888"
               fontSize={12}
               tickLine={false}
               axisLine={false}
               tickFormatter={value => `$${value}`}
             />
-            <Bar dataKey="sales" fill="#adfa1d" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="sales" fill="#adfa1d" radius={[4, 4, 0, 0]} color="" />
           </BarChart>
         </ChartContainer>
       </CardContent>

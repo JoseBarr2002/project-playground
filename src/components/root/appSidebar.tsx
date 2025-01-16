@@ -20,9 +20,9 @@ const AppSidebar = () => {
 
   return (
     <Sidebar collapsible="icon">
-      <SidebarContent>
+      <SidebarContent className="bg-gray-900">
         <SidebarGroup className="p-0">
-          <SidebarGroupLabel className="flex items-center justify-between h-16 px-4 bg-gray-900 text-white rounded-none opacity-100">
+          <SidebarGroupLabel className="flex items-center justify-between h-16 px-4 bg-gray-900 text-white rounded-lg opacity-100">
             {/* Different logo for open and closed */}
             {open ? <SquareSigma /> : null}
             {/* Different title for open and closed */}
@@ -39,9 +39,9 @@ const AppSidebar = () => {
               {/* Iterates over the menu items and renders them */}
               {menuItems.map(item => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton asChild   className="text-green-400 hover:bg-green-900 hover:text-green-400">
                     <a href={item.url}>
-                      <item.icon className="mr-2 h-4 w-4" />
+                      <item.icon />
                       <span>{item.title}</span>
                     </a>
                   </SidebarMenuButton>
