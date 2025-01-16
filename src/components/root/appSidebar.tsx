@@ -10,11 +10,12 @@ import {
   useSidebar,
 } from "@components/ui/sidebar";
 import { menuItems } from "./menuItems";
-import { ChefHat, Menu, X } from "lucide-react";
+import { SquareSigma, Menu, X } from "lucide-react";
 import { Label } from "@components/ui/label";
 import { Button } from "@components/ui/button";
 
 const AppSidebar = () => {
+  // State management: Keeps track of the sidebar's open/closed state
   const { open, toggleSidebar } = useSidebar();
 
   return (
@@ -22,16 +23,20 @@ const AppSidebar = () => {
       <SidebarContent>
         <SidebarGroup className="p-0">
           <SidebarGroupLabel className="flex items-center justify-between h-16 px-4 bg-gray-900 text-white rounded-none opacity-100">
-            {open ? <ChefHat /> : null}
+            {/* Different logo for open and closed */}
+            {open ? <SquareSigma /> : null}
+            {/* Different title for open and closed */}
             {open ? (
-              <Label className="text-xl font-semibold">Gourmet POS</Label>
+              <Label className="text-xl font-semibold">GOAT Storage</Label>
             ) : null}
+            {/* Different icon for open and closed */}
             <Button variant="ghost" onClick={toggleSidebar} size="icon">
               {open ? <X /> : <Menu />}
             </Button>
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu className="p-4 g-0 space-y-2">
+              {/* Iterates over the menu items and renders them */}
               {menuItems.map(item => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
