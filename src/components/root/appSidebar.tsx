@@ -10,7 +10,8 @@ import {
   useSidebar,
 } from "@components/ui/sidebar";
 import { menuItems } from "./menuItems";
-import { SquareSigma, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { GiGoat } from "react-icons/gi";
 import { Label } from "@components/ui/label";
 import { Button } from "@components/ui/button";
 
@@ -20,11 +21,11 @@ const AppSidebar = () => {
 
   return (
     <Sidebar collapsible="icon">
-      <SidebarContent>
+      <SidebarContent className="text-white" style={{ backgroundColor: "#111827" }}>
         <SidebarGroup className="p-0">
           <SidebarGroupLabel className="flex items-center justify-between h-16 px-4 bg-gray-900 text-white rounded-none opacity-100">
             {/* Different logo for open and closed */}
-            {open ? <SquareSigma /> : null}
+            {open ? <GiGoat className="size-7" /> : null}
             {/* Different title for open and closed */}
             {open ? (
               <Label className="text-xl font-semibold">GOAT Storage</Label>

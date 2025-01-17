@@ -17,7 +17,7 @@ import mockRecentOrders from "./mockRecentOrders";
 
 const RecentOrdersCardTable = () => {
   return (
-    <Card className="mb-8">
+    <Card className="mb-4">
       <CardHeader>
         <CardTitle>Recent Orders</CardTitle>
         <CardDescription>
