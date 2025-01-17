@@ -12,13 +12,13 @@ export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
     icon: Home,
   },
   {
-    title: "Orders",
-    url: "/orders",
+    title: "Task",
+    url: "/task",
     icon: ShoppingBag,
   },
   {
-    title: "Customers",
-    url: "#",
+    title: "Settings",
+    url: "/setup/settings",
     icon: Users,
   },
 ];
