@@ -9,7 +9,7 @@ import { Bell } from "lucide-react";
 import ProfileDropdownMenu from "./profileDropdownMenu";
 
 const Header = () => (
-  <header className="p-4 bg-white border-b flex justify-end">
+  <header className="p-4 bg-gray-900 border-b flex justify-end text-white">
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
