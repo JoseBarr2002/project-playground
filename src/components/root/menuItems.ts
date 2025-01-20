@@ -6,6 +6,7 @@ import {
   MessageCircle,
   DollarSign,
   CreditCard,
+  MonitorCog,
 } from "lucide-react";
 
 export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
@@ -43,5 +44,10 @@ export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
     title: "Payment Processing",
     url: "/setup/payment-processing",
     icon: CreditCard,
+  },
+  {
+    title: "Website Settings",
+    url: "/setup/website-settings",
+    icon: MonitorCog,
   },
 ];
