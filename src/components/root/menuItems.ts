@@ -9,8 +9,13 @@ import {
 
 export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
   {
-    title: "Dashboard",
+    title: "Dashboard-1",
     url: "/dashboard-1",
+    icon: Home,
+  },
+  {
+    title: "Dashboard-2",
+    url: "/dashboard-2",
     icon: Home,
   },
   {

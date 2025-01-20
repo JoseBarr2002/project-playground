@@ -1,5 +1,5 @@
 import DashboardTemplate from "@templates/dashboard-1";
 
-const Dashboard = () => <DashboardTemplate />;
+const Dashboard1 = () => <DashboardTemplate />;
 
-export default Dashboard;
+export default Dashboard1;
