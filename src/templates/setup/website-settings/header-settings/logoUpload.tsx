@@ -21,7 +21,7 @@ export function LogoUpload() {
         <Button variant="outline" className="flex-1">
           Choose File
         </Button>
-        <Button variant="destructive">Remove</Button>
+        <Button variant="destructive" size="sm">Remove</Button>
       </div>
     </div>
   )

@@ -58,7 +58,7 @@ export default function PaymentMethodsTab() {
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button className="mt-4">Update Payment Methods</Button>
+              <Button className="mt-4" size="sm">Update Payment Methods</Button>
             </TooltipTrigger>
             <TooltipContent>
               <p>Click to save your payment method changes</p>

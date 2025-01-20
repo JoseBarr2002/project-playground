@@ -115,7 +115,7 @@ export default function FeesTemplate() {
             <span>Fees</span>
           </nav>
         </div>
-        <Button onClick={() => setIsFormOpen(true)}>New Fee</Button>
+        <Button size="sm" onClick={() => setIsFormOpen(true)}>New Fee</Button>
       </div>
 
       <FeeSummary fees={fees} />

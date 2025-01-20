@@ -30,7 +30,7 @@ export default function WebsiteSettingsTemplate() {
           <h1 className="text-3xl font-bold text-gray-900">Website Settings</h1>
           <Breadcrumb />
         </div>
-        <Button onClick={handleSave}>Save All Changes</Button>
+        <Button size="sm" onClick={handleSave}>Save All Changes</Button>
       </div>
 
       <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">

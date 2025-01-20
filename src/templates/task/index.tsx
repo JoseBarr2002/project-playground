@@ -57,6 +57,7 @@ export default function TestTemplate() {
           <p className="text-gray-500">Here's a list of your tasks for this month!</p>
         </div>
         <Button
+          size="sm"
           onClick={() =>
             addTask({
               type: "Feature",
@@ -77,11 +78,11 @@ export default function TestTemplate() {
           onChange={(e) => setFilter(e.target.value)}
           className="max-w-sm"
         />
-        <Button variant="outline">
+        <Button size="sm" variant="outline">
           Status
           <ChevronDown className="ml-2 h-4 w-4" />
         </Button>
-        <Button variant="outline">
+        <Button size="sm" variant="outline">
           Priority
           <ChevronDown className="ml-2 h-4 w-4" />
         </Button>

@@ -7,7 +7,7 @@ export default function ActionButtons() {
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button type="submit" className="bg-orange-500 hover:bg-orange-600">
+            <Button size="sm" type="submit" className="bg-orange-500 hover:bg-orange-600">
               Update Settings
             </Button>
           </TooltipTrigger>
@@ -16,7 +16,7 @@ export default function ActionButtons() {
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
-      <Button variant="outline">Cancel</Button>
+      <Button size="sm" variant="outline">Cancel</Button>
     </div>
   )
 }

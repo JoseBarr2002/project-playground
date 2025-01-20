@@ -35,7 +35,7 @@ export default function ScheduleTab() {
         </div>
         <Dialog>
           <DialogTrigger asChild>
-            <Button variant="outline">Request Bank Account Change</Button>
+            <Button variant="outline" size="sm">Request Bank Account Change</Button>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
