@@ -9,7 +9,7 @@ export function LogoUpload() {
       <div className="mt-2 rounded-lg border bg-muted/50 p-6">
         <div className="flex justify-center rounded-lg border-2 border-dashed p-4">
           <Image
-            source={{ uri: '/assets/images/logo.png' }}
+            source={{ uri: '/assets/images/cabra-logo.png' }}
             alt="Logo preview"
             contentFit="contain"
             style={{ width: 300, height: 150 }}
