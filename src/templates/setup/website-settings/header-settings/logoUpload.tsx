@@ -9,10 +9,10 @@ export function LogoUpload() {
       <div className="mt-2 rounded-lg border bg-muted/50 p-6">
         <div className="flex justify-center rounded-lg border-2 border-dashed p-4">
           <Image
-            src="#"
+            source={{ uri: '/assets/images/logo.png' }}
             alt="Logo preview"
-            width={300}
-            height={150}
+            contentFit="contain"
+            style={{ width: 300, height: 150 }}
             className="max-h-[200px] w-auto"
           />
         </div>
