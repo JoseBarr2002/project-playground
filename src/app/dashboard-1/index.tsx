@@ -1,4 +1,4 @@
-import DashboardTemplate from "@templates/dashboard";
+import DashboardTemplate from "@templates/dashboard-1";
 
 const Dashboard = () => <DashboardTemplate />;
 
