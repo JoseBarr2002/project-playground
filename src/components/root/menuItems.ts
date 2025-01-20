@@ -5,6 +5,7 @@ import {
   Users,
   MessageCircle,
   DollarSign,
+  CreditCard,
 } from "lucide-react";
 
 export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
@@ -37,5 +38,10 @@ export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
     title: "Fees",
     url: "/setup/fees",
     icon: DollarSign,
+  },
+  {
+    title: "Payment Processing",
+    url: "/setup/payment-processing",
+    icon: CreditCard,
   },
 ];
