@@ -1,7 +1,7 @@
-import { GeneralSettings } from "./GeneralSettings"
-import { BillingSettings } from "./BillingSettings"
-import { SecuritySettings } from "./SecuritySettings"
-import { CustomerSettings } from "./CustomerSettings"
+import { GeneralSettings } from "./generalSettings"
+import { BillingSettings } from "./billingSettings"
+import { SecuritySettings } from "./securitySettings"
+import { CustomerSettings } from "./customerSettings"
 
 const SettingsTemplate = () => (
 <div className="space-y-8 p-8">

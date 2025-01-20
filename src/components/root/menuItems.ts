@@ -3,6 +3,7 @@ import {
   LucideIcon,
   ShoppingBag,
   Users,
+  MessageCircle,
 } from "lucide-react";
 
 export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
@@ -20,5 +21,10 @@ export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
     title: "Settings",
     url: "/setup/settings",
     icon: Users,
+  },
+  {
+    title: "Contact",
+    url: "/setup/contact",
+    icon: MessageCircle,
   },
 ];
