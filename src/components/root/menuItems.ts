@@ -10,6 +10,7 @@ import {
   Clock,
   Percent,
   KeySquare,
+  Tag,
 } from "lucide-react";
 
 export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
@@ -67,5 +68,10 @@ export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
     title: "Gate Settings",
     url: "/setup/gate-settings",
     icon: KeySquare,
+  },
+  {
+    title: "Promotions",
+    url: "/setup/promotions",
+    icon: Tag,
   },
 ];
