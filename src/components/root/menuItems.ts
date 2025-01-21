@@ -7,6 +7,7 @@ import {
   DollarSign,
   CreditCard,
   MonitorCog,
+  Clock,
 } from "lucide-react";
 
 export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
@@ -49,5 +50,10 @@ export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
     title: "Website Settings",
     url: "/setup/website-settings",
     icon: MonitorCog,
+  },
+  {
+    title: "Past Due Rules",
+    url: "/setup/past-due-rules",
+    icon: Clock,
   },
 ];
