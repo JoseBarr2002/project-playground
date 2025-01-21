@@ -8,6 +8,7 @@ import {
   CreditCard,
   MonitorCog,
   Clock,
+  Percent
 } from "lucide-react";
 
 export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
@@ -55,5 +56,10 @@ export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
     title: "Past Due Rules",
     url: "/setup/past-due-rules",
     icon: Clock,
+  },
+  {
+    title: "Rate Management",
+    url: "/setup/rate-management",
+    icon: Percent,
   },
 ];
