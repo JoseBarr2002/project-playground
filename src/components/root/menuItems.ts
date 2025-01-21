@@ -8,7 +8,8 @@ import {
   CreditCard,
   MonitorCog,
   Clock,
-  Percent
+  Percent,
+  KeySquare,
 } from "lucide-react";
 
 export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
@@ -61,5 +62,10 @@ export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
     title: "Rate Management",
     url: "/setup/rate-management",
     icon: Percent,
+  },
+  {
+    title: "Gate Settings",
+    url: "/setup/gate-settings",
+    icon: KeySquare,
   },
 ];
