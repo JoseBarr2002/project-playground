@@ -1,77 +1,110 @@
 import {
   Home,
-  LucideIcon,
-  ShoppingBag,
+  LayoutDashboard,
+  CheckSquare,
   Users,
   MessageCircle,
   DollarSign,
   CreditCard,
-  MonitorCog,
+  Settings,
   Clock,
   Percent,
   KeySquare,
   Tag,
-} from "lucide-react";
+} from "lucide-react"
+import { type LucideIcon } from "lucide-react"
 
-export const menuItems: { title: string; url: string; icon: LucideIcon }[] = [
+type MenuItem = {
+  title: string
+  url: string
+  icon: LucideIcon
+}
+
+type MenuCategory = {
+  name: string
+  items: MenuItem[]
+}
+
+export const menuCategories: MenuCategory[] = [
   {
-    title: "Dashboard-1",
-    url: "/dashboard-1",
-    icon: Home,
+    name: "Dashboards",
+    items: [
+      {
+        title: "Overview",
+        url: "/dashboard-1",
+        icon: Home,
+      },
+      {
+        title: "Analytics",
+        url: "/dashboard-2",
+        icon: LayoutDashboard,
+      },
+    ],
   },
   {
-    title: "Dashboard-2",
-    url: "/dashboard-2",
-    icon: Home,
+    name: "Management",
+    items: [
+      {
+        title: "Tasks",
+        url: "/task",
+        icon: CheckSquare,
+      },
+      {
+        title: "Users",
+        url: "/setup/settings",
+        icon: Users,
+      },
+      {
+        title: "Messages",
+        url: "/setup/contact",
+        icon: MessageCircle,
+      },
+    ],
   },
   {
-    title: "Task",
-    url: "/task",
-    icon: ShoppingBag,
+    name: "Finance",
+    items: [
+      {
+        title: "Pricing",
+        url: "/setup/fees",
+        icon: DollarSign,
+      },
+      {
+        title: "Payments",
+        url: "/setup/payment-processing",
+        icon: CreditCard,
+      },
+    ],
   },
   {
-    title: "Settings",
-    url: "/setup/settings",
-    icon: Users,
+    name: "Setup",
+    items: [
+      {
+        title: "General Settings",
+        url: "/setup/website-settings",
+        icon: Settings,
+      },
+      {
+        title: "Scheduling",
+        url: "/setup/past-due-rules",
+        icon: Clock,
+      },
+      {
+        title: "Pricing Rules",
+        url: "/setup/rate-management",
+        icon: Percent,
+      },
+      {
+        title: "Access Control",
+        url: "/setup/gate-settings",
+        icon: KeySquare,
+      },
+      {
+        title: "Marketing",
+        url: "/setup/promotions",
+        icon: Tag,
+      },
+    ],
   },
-  {
-    title: "Contact",
-    url: "/setup/contact",
-    icon: MessageCircle,
-  },
-  {
-    title: "Fees",
-    url: "/setup/fees",
-    icon: DollarSign,
-  },
-  {
-    title: "Payment Processing",
-    url: "/setup/payment-processing",
-    icon: CreditCard,
-  },
-  {
-    title: "Website Settings",
-    url: "/setup/website-settings",
-    icon: MonitorCog,
-  },
-  {
-    title: "Past Due Rules",
-    url: "/setup/past-due-rules",
-    icon: Clock,
-  },
-  {
-    title: "Rate Management",
-    url: "/setup/rate-management",
-    icon: Percent,
-  },
-  {
-    title: "Gate Settings",
-    url: "/setup/gate-settings",
-    icon: KeySquare,
-  },
-  {
-    title: "Promotions",
-    url: "/setup/promotions",
-    icon: Tag,
-  },
-];
+]
+
