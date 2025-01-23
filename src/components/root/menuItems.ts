@@ -10,7 +10,10 @@ import {
   Clock,
   Percent,
   KeySquare,
+  Blocks,
   Tag,
+  Map,
+  Grid,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -104,6 +107,26 @@ export const menuCategories: MenuCategory[] = [
         url: "/setup/promotions",
         icon: Tag,
       },
+    ],
+  },
+  {
+    name: "Units",
+    items: [
+      {
+        title: "Sitemap",
+        url: "/units/sitemap",
+        icon: Map,
+      },
+      {
+        title: "Create Unit",
+        url: "/units/create-unit",
+        icon: Blocks,
+      },
+      {
+        title: "Grid View",
+        url: "/units/grid-view",
+        icon: Grid,
+      }
     ],
   },
 ]
