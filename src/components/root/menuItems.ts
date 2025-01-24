@@ -14,6 +14,8 @@ import {
   Tag,
   Map,
   Grid,
+  List,
+  Package,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -126,7 +128,17 @@ export const menuCategories: MenuCategory[] = [
         title: "Grid View",
         url: "/units/grid-view",
         icon: Grid,
-      }
+      },
+      {
+        title: "List View",
+        url: "/units/list",
+        icon: List,
+      },
+      {
+        title: "Unit Types",
+        url: "/units/unit-types",
+        icon: Package,
+      },
     ],
   },
 ]
