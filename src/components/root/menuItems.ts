@@ -21,6 +21,7 @@ import {
   PiggyBank,
   BookmarkCheck,
   ClipboardList,
+  FileDown,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -181,8 +182,8 @@ export const menuCategories: MenuCategory[] = [
       },
       {
         title: "Import Customers",
-        url: "/customers/import-customers",
-        icon: FileQuestion,
+        url: "/customers/customer-import",
+        icon: FileDown,
       },
       {
         title: "Customer Groups",
