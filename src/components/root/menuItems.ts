@@ -18,6 +18,7 @@ import {
   Package,
   FileQuestion,
   ReceiptText,
+  PiggyBank,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -159,7 +160,7 @@ export const menuCategories: MenuCategory[] = [
       {
         title: "New Quote",
         url: "/customers/new-quote",
-        icon: FileQuestion,
+        icon: PiggyBank,
       },
       {
         title: "Reservations",
