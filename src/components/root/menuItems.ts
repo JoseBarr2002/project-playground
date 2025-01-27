@@ -19,6 +19,7 @@ import {
   FileQuestion,
   ReceiptText,
   PiggyBank,
+  BookmarkCheck,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -165,7 +166,7 @@ export const menuCategories: MenuCategory[] = [
       {
         title: "Reservations",
         url: "/customers/reservations",
-        icon: FileQuestion,
+        icon: BookmarkCheck,
       },
       {
         title: "Waiting List",
