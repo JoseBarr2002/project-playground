@@ -16,6 +16,8 @@ import {
   Grid,
   List,
   Package,
+  FileQuestion,
+  ReceiptText,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -138,6 +140,66 @@ export const menuCategories: MenuCategory[] = [
         title: "Unit Types",
         url: "/units/unit-types",
         icon: Package,
+      },
+    ],
+  },
+  {
+    name: "Customers",
+    items: [
+      {
+        title: "Customers",
+        url: "/customers",
+        icon: Users,
+      },
+      {
+        title: "Retail Sales",
+        url: "/customers/retail-sales",
+        icon: ReceiptText,
+      },
+      {
+        title: "New Quote",
+        url: "/customers/new-quote",
+        icon: FileQuestion,
+      },
+      {
+        title: "Reservations",
+        url: "/customers/reservations",
+        icon: FileQuestion,
+      },
+      {
+        title: "Waiting List",
+        url: "/customers/waiting-list",
+        icon: FileQuestion,
+      },
+      {
+        title: "New Customer",
+        url: "/customers/new-customer",
+        icon: FileQuestion,
+      },
+      {
+        title: "Import Customers",
+        url: "/customers/import-customers",
+        icon: FileQuestion,
+      },
+      {
+        title: "Customer Groups",
+        url: "/customers/customer-groups",
+        icon: FileQuestion,
+      },
+      {
+        title: "Field Settings",
+        url: "/customers/field-settings",
+        icon: FileQuestion,
+      },
+      {
+        title: "Customer Reports",
+        url: "/customers/customer-reports",
+        icon: FileQuestion,
+      },
+      {
+        title: "Mass Edit Rental Prices",
+        url: "/customers/mass-edit-rental-prices",
+        icon: FileQuestion,
       },
     ],
   },
