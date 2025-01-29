@@ -25,6 +25,7 @@ import {
   UserRoundPlus,
   PencilRuler,
   Apple,
+  Send,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -217,6 +218,46 @@ export const menuCategories: MenuCategory[] = [
         title: "Rental",
         url: "/reports",
         icon: Apple,
+      },
+    ],
+  },
+  {
+    name: "Communications",
+    items: [
+      {
+        title: "Print Batches",
+        url: "/communications/print-batches",
+        icon: Send,
+      },
+      {
+        title: "Templates",
+        url: "/communications/templates",
+        icon: FileQuestion,
+      },
+      {
+        title: "Settings",
+        url: "/communications/settings",
+        icon: FileQuestion,
+      },
+      {
+        title: "Print/Email Letters",
+        url: "/communications/print-email-letters",
+        icon: FileQuestion,
+      },
+      {
+        title: "Send Emails",
+        url: "/communications/send-emails",
+        icon: FileQuestion,
+      },
+      {
+        title: "Mailing Emails",
+        url: "/communications/mailing-emails",
+        icon: FileQuestion,
+      },
+      {
+        title: "Text Messages",
+        url: "/communications/text-messages",
+        icon: FileQuestion,
       },
     ],
   },
