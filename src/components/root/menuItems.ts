@@ -22,6 +22,8 @@ import {
   BookmarkCheck,
   ClipboardList,
   FileDown,
+  UserRoundPlus,
+  PencilRuler,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -178,7 +180,7 @@ export const menuCategories: MenuCategory[] = [
       {
         title: "New Customer",
         url: "/customers/new-customer",
-        icon: FileQuestion,
+        icon: UserRoundPlus,
       },
       {
         title: "Import Customers",
@@ -203,7 +205,7 @@ export const menuCategories: MenuCategory[] = [
       {
         title: "Mass Edit Rental Prices",
         url: "/customers/mass-edit-rental-prices",
-        icon: FileQuestion,
+        icon: PencilRuler,
       },
     ],
   },
