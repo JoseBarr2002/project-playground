@@ -24,6 +24,7 @@ import {
   FileDown,
   UserRoundPlus,
   PencilRuler,
+  Apple,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -206,6 +207,16 @@ export const menuCategories: MenuCategory[] = [
         title: "Mass Edit Rental Prices",
         url: "/customers/mass-edit-rental-prices",
         icon: PencilRuler,
+      },
+    ],
+  },
+  {
+    name: "Reports",
+    items: [
+      {
+        title: "Rental",
+        url: "/reports",
+        icon: Apple,
       },
     ],
   },
