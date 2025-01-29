@@ -192,8 +192,8 @@ export const menuCategories: MenuCategory[] = [
       },
       {
         title: "Field Settings",
-        url: "/customers/field-settings",
-        icon: FileQuestion,
+        url: "/customers/field-form",
+        icon: Settings,
       },
       {
         title: "Customer Reports",
