@@ -27,6 +27,7 @@ import {
   Apple,
   Send,
   ClipboardType,
+  Printer,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -243,11 +244,11 @@ export const menuCategories: MenuCategory[] = [
       {
         title: "Print/Email Letters",
         url: "/communications/print-email-letters",
-        icon: FileQuestion,
+        icon: Printer,
       },
       {
-        title: "Send Emails",
-        url: "/communications/send-emails",
+        title: "Send Letters",
+        url: "/communications/send-letters",
         icon: FileQuestion,
       },
       {
