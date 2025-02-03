@@ -29,6 +29,7 @@ import {
   ClipboardType,
   Printer,
   Mail,
+  FileText,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -260,7 +261,17 @@ export const menuCategories: MenuCategory[] = [
       {
         title: "Text Messages",
         url: "/communications/text-messages",
-        icon: FileQuestion,
+        icon: MessageCircle,
+      },
+    ],
+  },
+  {
+    name: "Website",
+    items: [
+      {
+        title: "Website Pages",
+        url: "/website/pages",
+        icon: FileText,
       },
     ],
   },
