@@ -253,9 +253,9 @@ export const menuCategories: MenuCategory[] = [
         icon: Mail,
       },
       {
-        title: "Mailing Emails",
-        url: "/communications/mailing-emails",
-        icon: FileQuestion,
+        title: "Mailing Labels",
+        url: "/communications/mailing-labels",
+        icon: Tag,
       },
       {
         title: "Text Messages",
