@@ -26,6 +26,7 @@ import {
   PencilRuler,
   Apple,
   Send,
+  ClipboardType,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -231,8 +232,8 @@ export const menuCategories: MenuCategory[] = [
       },
       {
         title: "Templates",
-        url: "/communications/templates",
-        icon: FileQuestion,
+        url: "/communications/letter-templates",
+        icon: ClipboardType,
       },
       {
         title: "Settings",
