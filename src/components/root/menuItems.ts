@@ -238,7 +238,7 @@ export const menuCategories: MenuCategory[] = [
       {
         title: "Settings",
         url: "/communications/settings",
-        icon: FileQuestion,
+        icon: Settings,
       },
       {
         title: "Print/Email Letters",
