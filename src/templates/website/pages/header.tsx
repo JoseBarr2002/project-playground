@@ -1,5 +1,6 @@
 import { Plus, Settings2 } from "lucide-react"
 import { Button } from "@components/ui/button"
+import { router } from 'expo-router'
 
 interface PageHeaderProps {
   title: string
@@ -16,9 +17,9 @@ export function PageHeader({ title }: PageHeaderProps) {
           <Settings2 className="mr-2 h-4 w-4" />
           Settings
         </Button>
-        <Button size="sm">
+        <Button size="sm" onClick={() => router.push('/website/pages/new-page')}>
           <Plus className="mr-2 h-4 w-4" />
-          Create New Page
+          Add Page
         </Button>
       </div>
     </div>

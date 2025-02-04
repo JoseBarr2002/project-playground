@@ -8,14 +8,7 @@ export default function WebsitePagesTemplate() {
   return (
     <div className="container mx-auto py-6">
       <div className="flex flex-col gap-6">
-        <PageHeader
-          title="Pages"
-          breadcrumbs={[
-            { label: "Home", href: "/" },
-            { label: "Website", href: "/website" },
-            { label: "Pages", href: "/website/pages", current: true },
-          ]}
-        />
+        <PageHeader title="Page Management" />
         <PageStatistics pages={mockPages} />
         <Card>
           <CardHeader>
