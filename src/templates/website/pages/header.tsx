@@ -13,9 +13,9 @@ export function PageHeader({ title }: PageHeaderProps) {
         <h1 className="text-3xl font-semibold">{title}</h1>
       </div>
       <div className="flex gap-2">
-        <Button size="sm" variant="outline">
+        <Button size="sm" variant="outline" onClick={() => router.push('/website/pages/manage-nav')}>
           <Settings2 className="mr-2 h-4 w-4" />
-          Settings
+          Manage Navigation
         </Button>
         <Button size="sm" onClick={() => router.push('/website/pages/new-page')}>
           <Plus className="mr-2 h-4 w-4" />

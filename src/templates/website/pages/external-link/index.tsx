@@ -43,7 +43,7 @@ export default function ExternalLinkTemplate() {
             <div className="bg-blue-50 p-4 rounded-lg">
               <p className="text-sm text-blue-700">
                 Need to rearrange your navigation? Visit the{" "}
-                <Link href="/manage-navigation" className="font-medium underline hover:text-blue-900">
+                <Link href="/website/pages" className="font-medium underline hover:text-blue-900">
                   navigation management page
                 </Link>{" "}
                 to customize the order and hierarchy of your links.
