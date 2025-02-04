@@ -31,6 +31,7 @@ import {
   Mail,
   FileText,
   Sticker,
+  Image,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -278,6 +279,11 @@ export const menuCategories: MenuCategory[] = [
         title: "Blog Post",
         url: "/website/blog-post",
         icon: Sticker,
+      },
+      {
+        title: "Image Library",
+        url: "/website/image-library",
+        icon: Image,
       },
     ],
   },
