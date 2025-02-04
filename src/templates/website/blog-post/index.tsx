@@ -6,6 +6,7 @@ import Layout from "./_layout"
 import BlogPostControls from "./blogPostControls"
 import BlogPostList from "./blogPostList"
 import QuickTips from "./quickTips"
+import {Link} from "expo-router"
 
 export default function BlogPostTemplate() {
   return (
@@ -17,10 +18,12 @@ export default function BlogPostTemplate() {
               <CardTitle className="text-3xl font-light mb-2">Blog Posts</CardTitle>
               <CardDescription>Manage and organize your website's blog content</CardDescription>
             </div>
-            <Button size="sm" className="bg-[#3E97CB] hover:bg-[#3785b3]">
-              <Plus className="h-4 w-4 mr-2" />
-              New Blog Post
-            </Button>
+            <Link href="/website/new-post">
+              <Button size="sm" className="bg-[#3E97CB] hover:bg-[#3785b3]">
+                <Plus className="h-4 w-4 mr-2" />
+                New Blog Post
+              </Button>
+            </Link>
           </div>
         </CardHeader>
         <CardContent>

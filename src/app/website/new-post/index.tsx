@@ -1,6 +1,7 @@
-const NewPostTemplate = () => {
-  return <div>NewPostTemplate</div>
+import NewPostTemplate from "@templates/website/new-post"
+
+const NewPost = () => {
+  return <NewPostTemplate />
 }
 
-export default NewPostTemplate
-    
+export default NewPost
