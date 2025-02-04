@@ -21,6 +21,9 @@ export function PageHeader({ title }: PageHeaderProps) {
           <Plus className="mr-2 h-4 w-4" />
           Add Page
         </Button>
+        <Button size="sm" onClick={() => router.push('/website/pages/external-link')}>
+          Add External Link
+        </Button>
       </div>
     </div>
   )

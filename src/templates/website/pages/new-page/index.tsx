@@ -4,7 +4,8 @@ import { Input } from "@components/ui/input"
 import { Label } from "@components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@components/ui/select"
 import { Textarea } from "@components/ui/textarea"
-import { Info } from "lucide-react"
+import { Info} from "lucide-react"
+import {Link} from "expo-router"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@components/ui/tooltip"
 
 export default function NewPageTemplate() {
@@ -113,7 +114,9 @@ export default function NewPageTemplate() {
           <div className="flex items-center justify-between pt-6 border-t">
             <p className="text-sm text-muted-foreground">Additional widgets can be added after saving the page</p>
             <div className="flex gap-2">
-              <Button size="sm" variant="outline">Cancel</Button>
+              <Link href="/website/pages">
+                <Button size="sm" variant="outline">Cancel</Button>
+              </Link>
               <Button size="sm" type="submit">Save Page</Button>
             </div>
           </div>
