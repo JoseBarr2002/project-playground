@@ -32,6 +32,7 @@ import {
   FileText,
   Sticker,
   Image,
+  ConciergeBell,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -284,6 +285,16 @@ export const menuCategories: MenuCategory[] = [
         title: "Image Library",
         url: "/website/image-library",
         icon: Image,
+      },    
+      {
+        title: "Website Settings",
+        url: "/website/settings",
+        icon: Settings,
+      },
+      {
+        title: "Additional Services",
+        url: "/website/services",
+        icon: ConciergeBell,
       },
     ],
   },
