@@ -33,6 +33,7 @@ import {
   Sticker,
   Image,
   ConciergeBell,
+  ExternalLink,
 } from "lucide-react"
 import { type LucideIcon } from "lucide-react"
 
@@ -295,6 +296,11 @@ export const menuCategories: MenuCategory[] = [
         title: "Additional Services",
         url: "/website/services",
         icon: ConciergeBell,
+      },
+      {
+        title: "View Website",
+        url: "#",
+        icon: ExternalLink,
       },
     ],
   },
