@@ -84,6 +84,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "npx eslint src/**",
-    "lint:fix": "yarn run lint --fix"
+    "lint:fix": "yarn run lint --fix",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   }
 }
