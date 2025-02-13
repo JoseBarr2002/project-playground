@@ -40,7 +40,7 @@ export default function CustomersTemplate() {
         {/* Breadcrumb */}
         <div className="text-sm text-muted-foreground">
           <a href="/customers" className="hover:underline">
-            Home
+            Home boi
           </a>
           {" / "}
           <span>Customers</span>
