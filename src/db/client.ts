@@ -1,9 +1,10 @@
-import { drizzle } from "drizzle-orm/libsql";
-import { createClient } from "@libsql/client";
+import { drizzle } from "drizzle-orm/libsql/web";
+import { createClient } from "@libsql/client/web";
 
-const turso = createClient({
+const tursoClient = createClient({
   url: process.env.TURSO_DATABASE_URL!,
   authToken: process.env.TURSO_AUTH_TOKEN,
 });
 
-export const db = drizzle(turso);
+// Register all tables in the schema
+export const db = drizzle(tursoClient);

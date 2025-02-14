@@ -8,6 +8,7 @@
       "@hooks/*":["src/hooks/*"],
       "@lib/*":["src/lib/*"],
       "@templates/*":["src/templates/*"],
+      "@db/*":["src/db/*"],
     },
   },
   "extends": "expo/tsconfig.base",

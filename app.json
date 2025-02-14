@@ -8,7 +8,12 @@
     ],
     "web": {
       "output": "server",
-      "bundler": "metro"
+      "bundler": "metro",
+      "plugins": [
+        "expo-router",{
+          "origin": "https://evanbacon.dev/"
+        }
+      ]
     },
     "name": "pos-restaurant",
     "slug": "pos-restaurant"
